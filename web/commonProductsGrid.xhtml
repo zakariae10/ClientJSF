@@ -8,7 +8,7 @@
 
     <ui:define name="content">
         <!-- SITE CONTENT
-=========================================================================== -->
+        =========================================================================== -->
         <div id="site-content">
 
             <!-- BREADCRUMBS AND DISPLAY MODE -->
@@ -31,16 +31,12 @@
                             <div class="display-mode">
                                 <ul class="unstyled float-right">
                                     <li class="active">
-                                        <a href="product2.html?mode=grid" id="grid-mode">
-                                            <span class="icon-grid9"></span>
-                                            Grid
-                                        </a>
+                                        <span class="icon-grid9"></span>
+                                        <h:link outcome="commonProductsGrid" value="Grid"/>
                                     </li>
                                     <li>
-                                        <a href="product1.html?mode=list" id="list-mode">
-                                            <span class="icon-list"></span>
-                                            List
-                                        </a>
+                                        <span class="icon-list"></span>
+                                        <h:link outcome="commonProductsList" value="List"/>
                                     </li>
                                 </ul>
                             </div>
@@ -67,7 +63,7 @@
                                     <ul class="unstyled pretty-list">
                                         <li><a href="#">New</a></li>
                                         <li><a href="#">Dressy Collection</a></li>
-                                        <li><a href="#">Blazers & Jackets</a></li>
+                                        <li><a href="#">Blazers et Jackets</a></li>
                                         <li><a href="#">Dresses</a></li>
                                         <li><a href="#">Night Wear</a></li>
                                         <li><a href="#">Designer</a></li>
@@ -115,7 +111,7 @@
                                         <a href="#" class="product-link clearfix">
                                             <div class="ribbon hot"></div>
                                             <div class="product-thumbnail">
-                                                <img src="img/featured/thumbnail/3.jpg" alt="" />
+                                                <img src="#{request.contextPath}/resources/img/featured/thumbnail/3.jpg" alt="" />
                                                 <div class="caption">- 15%</div>
                                             </div>
                                             <div class="product-info clearfix">
@@ -133,7 +129,7 @@
                         <div class="col-xs-12 col-sm-8 col-lg-9 main">
 
                             <!-- PRODUCT AREA -->
-                            <div id="product-area" class="section offer products-container portrait" data-layout="grid">
+                            <div id="product-area" class="section offer products-container portrait" data-layout="list">
 
                                 <div class="row">
                                     <div class="mix col-xs-12 col-sm-6 col-lg-4">
@@ -141,7 +137,7 @@
                                             <a href="#" class="product-link clearfix">
                                                 <div class="ribbon special"></div>
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/Robert-Rodriguez-Lace-Applique-Pleated-Strapless-Dress.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/Robert-Rodriguez-Lace-Applique-Pleated-Strapless-Dress.jpg" alt="" />
                                                     <div class="caption bottom-left">$110</div>
                                                 </div>
                                             </a>
@@ -179,7 +175,7 @@
                                         <div class="product" data-price="70" data-discount="15" data-name="'Renee' Printed Maxi Dress" data-filter="">
                                             <a href="#" class="product-link clearfix">
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/2013-Women-s-O-neck-Retro-Sequins-Floral-Printed-Pure-Silk-Satin-Dress-IM-02311378-1.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/2013-Women-s-O-neck-Retro-Sequins-Floral-Printed-Pure-Silk-Satin-Dress-IM-02311378-1.jpg" alt="" />
                                                     <div class="caption bottom-left">$70</div>
                                                     <div class="caption top-right">- 15%</div>
                                                 </div>
@@ -219,7 +215,7 @@
                                             <a href="#" class="product-link clearfix">
                                                 <div class="ribbon new"></div>
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/Nanette-Lepore-La-Boqueria-Embroidered-Top-Flamenco-Floral-Print-Skirt.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-La-Boqueria-Embroidered-Top-Flamenco-Floral-Print-Skirt.jpg" alt="" />
                                                     <div class="caption bottom-left">$150</div>
                                                 </div>
                                             </a>
@@ -257,7 +253,7 @@
                                         <div class="product" data-price="250" data-discount="10" data-name="'Iris' Printed Tee" data-filter="">
                                             <a href="#" class="product-link clearfix">
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/Nanette-Lepore-Go-Crazy-Mixed-Knit-Dress.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-Go-Crazy-Mixed-Knit-Dress.jpg" alt="" />
                                                     <div class="caption top-right">- 10%</div>
                                                     <div class="caption bottom-left">$250</div>
                                                 </div>
@@ -297,7 +293,7 @@
                                             <a href="#" class="product-link clearfix">
                                                 <div class="ribbon new"></div>
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/Ali-Ro-Cap-Sleeve-Multi-Print-Silk-Dress.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/Ali-Ro-Cap-Sleeve-Multi-Print-Silk-Dress.jpg" alt="" />
                                                     <div class="caption bottom-left">$170</div>
                                                 </div>
                                             </a>
@@ -335,7 +331,7 @@
                                         <div class="product" data-price="100" data-discount="30" data-name="'Tippy' Stripe Tee" data-filter="">
                                             <a href="#" class="product-link clearfix">
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/RED-Valentino-Ruffed-Peplum-Cardigan-Floral-Print-Fit-and-Flare-Dress.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/RED-Valentino-Ruffed-Peplum-Cardigan-Floral-Print-Fit-and-Flare-Dress.jpg" alt="" />
                                                     <div class="caption bottom-left">$100</div>
                                                     <div class="caption top-right">- 30%</div>
                                                 </div>
@@ -375,7 +371,7 @@
                                             <a href="#" class="product-link clearfix">
                                                 <div class="ribbon special"></div>
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/Alexander-McQueen-Cap-Sleeve-Puckered-Jacquard-Sheath-Dress.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/Alexander-McQueen-Cap-Sleeve-Puckered-Jacquard-Sheath-Dress.jpg" alt="" />
                                                     <div class="caption bottom-left">$110</div>
                                                 </div>
                                             </a>
@@ -413,7 +409,7 @@
                                         <div class="product" data-price="40" data-discount="70" data-name="'Demi' Tribal Print Shirt" data-filter="">
                                             <a href="#" class="product-link clearfix">
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/2013-.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/2013-.jpg" alt="" />
                                                     <div class="caption bottom-left">$40</div>
                                                     <div class="caption top-right">- 70%</div>
                                                 </div>
@@ -453,7 +449,7 @@
                                             <a href="#" class="product-link clearfix">
                                                 <div class="ribbon hot"></div>
                                                 <div class="product-thumbnail">
-                                                    <img src="img/offer/Nanette-Lepore-Barcelona-Crochet-Blazer-Sunbathe-Printed-Sleeveless-Top.jpg" alt="" />
+                                                    <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-Barcelona-Crochet-Blazer-Sunbathe-Printed-Sleeveless-Top.jpg" alt="" />
                                                     <div class="caption bottom-left">$130</div>
                                                 </div>
                                             </a>
@@ -524,7 +520,8 @@
 
         </div>
         <!-- /SITE CONTENT -->
-
+        <script src="#{request.contextPath}/resources/js/jquery.mixitup.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/jquery.nouislider.min.js"></script>
     </ui:define>
 </ui:composition>
 

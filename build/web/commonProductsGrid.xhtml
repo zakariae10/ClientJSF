@@ -1,0 +1,528 @@
+<ui:composition template="/WEB-INF/templates/MasterTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                >
+    <ui:define name="title">Nos articles</ui:define>
+
+    <ui:define name="content">
+        <!-- SITE CONTENT
+        =========================================================================== -->
+        <div id="site-content">
+
+            <!-- BREADCRUMBS AND DISPLAY MODE -->
+            <div class="inner-action-bar">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 center-sm">
+                            <div class="breadcrumbs">
+                                <ul class="unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Category</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 space20 visible-xs"></div>
+
+                        <div class="col-xs-12 col-sm-6 center-sm">
+                            <div class="display-mode">
+                                <ul class="unstyled float-right">
+                                    <li class="active">
+                                        <span class="icon-grid9"></span>
+                                        <h:link outcome="commonProductsGrid" value="Grid"/>
+                                    </li>
+                                    <li>
+                                        <span class="icon-list"></span>
+                                        <h:link outcome="commonProductsList" value="List"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /BREADCRUMBS AND DISPLAY MODE -->
+
+            <!-- SIDEBAR + MAIN CONTENT CONTAINER -->
+            <div class="main-content">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- SIDE BAR -->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 side">
+
+                            <!-- CATEGORIES LIST -->
+                            <div class="section category-list">
+                                <h4 class="section-title">Categories</h4>
+                                <div class="section-body">
+                                    <ul class="unstyled pretty-list">
+                                        <li><a href="#">New</a></li>
+                                        <li><a href="#">Dressy Collection</a></li>
+                                        <li><a href="#">Blazers et Jackets</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Night Wear</a></li>
+                                        <li><a href="#">Designer</a></li>
+                                        <li><a href="#">T-shirts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /CATEGORIES LIST -->
+
+                            <!-- PRICE RANGE -->
+                            <div class="section">
+                                <h4 class="section-title">Price Range</h4>
+                                <div class="section-body">
+                                    <div class="range-slider-container">
+                                        <div class="range-slider"></div>
+                                        <div class="range-slider-value clearfix">
+                                            <span class="min"></span>
+                                            <span class="max"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /PRICE RANGE -->
+
+                            <!-- CHOOSE COLOR -->
+                            <div class="section">
+                                <h4 class="section-title">Choose your Color</h4>
+                                <div class="section-body">
+                                    <ul class="unstyled pretty-list arrow-list">
+                                        <li><a href="#">Black [2]</a></li>
+                                        <li><a href="#">White [3]</a></li>
+                                        <li><a href="#">Brown [1]</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Green [6]</a></li>
+                                        <li><a href="#">Orange [3]</a></li>
+                                        <li><a href="#">Red [...]</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /CHOOSE COLOR -->
+
+                            <div class="section">
+                                <div class="products-container portrait featured">
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon hot"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="#{request.contextPath}/resources/img/featured/thumbnail/3.jpg" alt="" />
+                                                <div class="caption">- 15%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">Big Sale Every Day</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /SIDE BAR -->
+
+                        <!-- MAIN CONTENT -->
+                        <div class="col-xs-12 col-sm-8 col-lg-9 main">
+
+                            <!-- PRODUCT AREA -->
+                            <div id="product-area" class="section offer products-container portrait" data-layout="list">
+
+                                <div class="row">
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="110" data-discount="0" data-name="'Mia' Border Print Dress" data-filter="special">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="ribbon special"></div>
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/Robert-Rodriguez-Lace-Applique-Pleated-Strapless-Dress.jpg" alt="" />
+                                                    <div class="caption bottom-left">$110</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Mia' Border Print Dress</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">John Doe</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="70" data-discount="15" data-name="'Renee' Printed Maxi Dress" data-filter="">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/2013-Women-s-O-neck-Retro-Sequins-Floral-Printed-Pure-Silk-Satin-Dress-IM-02311378-1.jpg" alt="" />
+                                                    <div class="caption bottom-left">$70</div>
+                                                    <div class="caption top-right">- 15%</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Renee' Printed Maxi Dress</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Jessica Doe</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="150" data-discount="0" data-name="'Dixie' Printed Tee" data-filter="new">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="ribbon new"></div>
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-La-Boqueria-Embroidered-Top-Flamenco-Floral-Print-Skirt.jpg" alt="" />
+                                                    <div class="caption bottom-left">$150</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Dixie' Printed Tee</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">John Doe</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="250" data-discount="10" data-name="'Iris' Printed Tee" data-filter="">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-Go-Crazy-Mixed-Knit-Dress.jpg" alt="" />
+                                                    <div class="caption top-right">- 10%</div>
+                                                    <div class="caption bottom-left">$250</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Iris' Printed Tee</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Alex Doe</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="170" data-discount="0" data-name="'Abi' Stripe Shirt" data-filter="new">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="ribbon new"></div>
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/Ali-Ro-Cap-Sleeve-Multi-Print-Silk-Dress.jpg" alt="" />
+                                                    <div class="caption bottom-left">$170</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Abi' Stripe Shirt</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Susan McModel</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="100" data-discount="30" data-name="'Tippy' Stripe Tee" data-filter="">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/RED-Valentino-Ruffed-Peplum-Cardigan-Floral-Print-Fit-and-Flare-Dress.jpg" alt="" />
+                                                    <div class="caption bottom-left">$100</div>
+                                                    <div class="caption top-right">- 30%</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Tippy' Stripe Tee</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Sara Fakename</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="110" data-discount="0" data-name="'Coco' Sequin Tee" data-filter="special">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="ribbon special"></div>
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/Alexander-McQueen-Cap-Sleeve-Puckered-Jacquard-Sheath-Dress.jpg" alt="" />
+                                                    <div class="caption bottom-left">$110</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Coco' Sequin Tee</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Jayne None</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="40" data-discount="70" data-name="'Demi' Tribal Print Shirt" data-filter="">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/2013-.jpg" alt="" />
+                                                    <div class="caption bottom-left">$40</div>
+                                                    <div class="caption top-right">- 70%</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">'Demi' Tribal Print Shirt</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Susan McModel</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4">
+                                        <div class="product" data-price="130" data-discount="0" data-name="'Rita' Ombre Top" data-filter="hot">
+                                            <a href="#" class="product-link clearfix">
+                                                <div class="ribbon hot"></div>
+                                                <div class="product-thumbnail">
+                                                    <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-Barcelona-Crochet-Blazer-Sunbathe-Printed-Sleeveless-Top.jpg" alt="" />
+                                                    <div class="caption bottom-left">$130</div>
+                                                </div>
+                                            </a>
+                                            <div class="product-info clearfix">
+                                                <h4 class="title">
+                                                    <a href="#">Woman Summer Dresses</a>
+                                                </h4>
+                                                <div class="description">
+                                                    <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                    <div class="text"><p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p></div>
+                                                    <div class="add-to-cart">
+                                                        <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                    </div>
+                                                    <ul class="links">
+                                                        <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                        <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="details">
+                                                    <p>
+                                                        Model: <a href="#">Alex Doe</a>
+                                                    </p>
+                                                    <p class="by">
+                                                        by: <a href="#">shopfast</a>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="add-to-cart">
+                                                    <span class="icon-shopcart"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /PRODUCT AREA -->
+
+                            <!-- PAGINATION -->
+                            <div class="pagination-container">
+                                <div class="row">
+                                    <div class="col-xs-8 col-sm-8">
+                                        <ul class="pagination">
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4">
+                                        <ul class="direction-nav pagination-direction float-right">
+                                            <li><a href="#" class="btn btn-prev disabled"><span class="icon-arrow_left"></span></a></li>
+                                            <li><a href="#" class="btn btn-next"><span class="icon-arrow_right"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PAGINATION -->
+
+                        </div>
+                        <!-- /MAIN CONTENT -->
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /MAIN CONTENT -->
+
+        </div>
+        <!-- /SITE CONTENT -->
+        <script src="#{request.contextPath}/resources/js/jquery.mixitup.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/jquery.nouislider.min.js"></script>
+    </ui:define>
+</ui:composition>
+
+

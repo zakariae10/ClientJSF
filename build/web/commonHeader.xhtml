@@ -20,9 +20,9 @@
                             <!-- top header links -->
                             <div class="col-xs-12 col-sm-6 top-links center-sm">
                                 <ul class="menu">
-                                    <li><a href="index.html">My Account</a></li>
-                                    <li><a href="cart.html">Wishlist</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><h:link outcome="commonCheckout" value="My Account"/></li>
+                                    <li><h:link outcome="commonCart" value="Wishlist"/></li>
+                                    <li><h:link outcome="commonCheckout" value="Checkout"/></li>
                                     <li><a href="#">Login</a></li>
                                     <li><a href="#">Register</a></li>
                                 </ul>
@@ -110,7 +110,7 @@
                                                         <div class="clearfix"></div>
                                                     </li>
                                                 </ul>
-                                                <div class="footer"><a href="cart.html">See All</a></div>
+                                                <div class="footer"><h:link outcome="commonCart" value="See All"/></div>
                                             </div>
                                             <!-- /CART ITEMS -->
                                         </div>
@@ -135,31 +135,24 @@
                             <!-- main menu -->
                             <ul class="main-menu menu visible-lg">
                                 <li class="active">
-                                    <a href="index"><i class="icon-home"></i></a>
-
-                                    <ul>
-                                        <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
-                                        <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
-                                    </ul>
+                                    
+                                    <h:link outcome="index">Home</h:link>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">Pages</a>
 
                                     <ul>
                                         <li>
-                                            <a href="product.html">Products</a>
-
+                                            <h:link outcome="commonProductsGrid" value="Products"/>
                                             <ul>
-                                                <li><a href="product2.html?mode=grid">Grid layout</a></li>
-                                                <li><a href="product1.html?mode=list">List layout</a></li>
-                                                <li><a href="single.html">Product details</a></li>
+                                                <li><h:link outcome="commonProductsGrid" value="Products Grid"/></li>
+                                                <li><h:link outcome="commonProductsList" value="Products List"/></li>
+                                                <li><h:link outcome="commonProduct" value="Product details"/></li>
                                             </ul>
                                         </li>
-                                        <li><a href="cart.html">Shopping cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                        <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
-                                        <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
+                                        <li><h:link outcome="commonCart" value="Shopping cart"/></li>
+                                        <li><h:link outcome="commonCheckout" value="Checkout"/></li>
+                                        <li><h:link outcome="commonContact" value="Contact us"/></li>
                                     </ul>
 
                                 </li>
@@ -319,18 +312,16 @@
                                                     <a href="javsacript:void(0);">Products</a>
 
                                                     <ul class="dl-submenu">
-                                                        <li><a href="product2.html?mode=grid">Grid layout</a></li>
-                                                        <li><a href="product1.html?mode=list">List layout</a></li>
-                                                        <li><a href="single.html">Product details</a></li>
+                                                        <li><h:link outcome="commonProductsGrid" value="Products Grid"/></li>
+                                                        <li><h:link outcome="commonProductsGrid" value="Products List"/></li>
+                                                        <li><h:link outcome="commonProduct" value="Product details"/></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="cart.html">Shopping cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><h:link outcome="commonCart" value="Shopping cart"/></li>
+                                                <li><h:link outcome="commonCheckout" value="Checkout"/></li>
                                                 
                                                 <!-- Contact -->
                                                 <li><a href="commonContact">Contacter nous</a></li>
-                                                <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
-                                                <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
                                             </ul>
 
                                         </li>
