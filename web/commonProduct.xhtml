@@ -1,0 +1,417 @@
+<ui:composition template="/WEB-INF/templates/MasterTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                >
+    <ui:define name="title">hello</ui:define>
+
+    <ui:define name="content">
+        <!-- SITE CONTENT
+=========================================================================== -->
+        <div id="site-content">
+
+            <!-- BREADCRUMBS -->
+            <div class="inner-action-bar">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="breadcrumbs">
+                                <ul class="unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="product-grid.html">Women</a></li>
+                                    <li class="active">Woman Summer Dresses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /BREADCRUMBS -->
+
+            <!-- SIDEBAR + MAIN CONTENT CONTAINER -->
+            <div class="main-content">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- SIDE BAR -->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 pull-right side">
+
+                            <div class="section">
+                                <div class="products-container portrait featured">
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon new"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/3.jpg" alt="" />
+                                                <div class="caption">- 25%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">Big Sale Every Day</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon hot"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/5.jpg" alt="" />
+                                                <div class="caption">- 15%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">2013 Summer collection</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /SIDE BAR -->
+
+                        <!-- MAIN CONTENT -->
+                        <div class="col-xs-12 col-sm-8 col-lg-9 main">
+
+                            <!-- SINGLE PRODUCT DETAILS -->
+                            <div class="section product-single">
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="product-album">
+                                            <a href="#" class="jq-zoom" tite="click to view full size, hover to zoom">
+                                                <img src="img/offer/Nanette-Lepore-La-Boqueria-Embroidered-Top-Flamenco-Floral-Print-Skirt.jpg" alt="" />
+                                            </a>
+                                            <ul class="unstyled">
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="img/offer/Nanette-Lepore-Barcelona-Crochet-Blazer-Sunbathe-Printed-Sleeveless-Top.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="img/offer/Nanette-Lepore-Amorcito-One-Shoulder-Knit-Dress.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="img/offer/Robert-Rodriguez-Lace-Applique-Pleated-Strapless-Dress.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-8 col-sm-8">
+                                        <div class="product-info clearfix">
+                                            <h4 class="title">
+                                                <a href="#">'Mia' Border Print Dress</a>
+                                            </h4>
+                                            <div class="description">
+                                                <div class="prices"><span class="off-price">$110.00 - </span><s class="orginal-price">$121.00</s></div>
+                                                <div class="text">
+                                                    <p>In Stock</p>
+                                                    <p>Etiam scelerisque molestie purus vel mollis. Mauris dapibus quam id turpis rutrum. Phasellus placerat pretium pellentesque.  Lorem ipsum dolor sit amet adipcising elit. Aliquam erat volutpat, nec posuere diam consectetur non. Suspendisse quis orci augue. Donec in viverra sapien, et facilisis tellus. <a href="#" class="readmore" title="read more">[...] </a></p>
+                                                </div>
+                                                <div class="qty">
+                                                    <label for="qty-input">Quantity:</label>
+                                                    <input type="text" id="qty-input" value="1" />
+                                                    <div class="space30 clearfix"></div>
+                                                </div>
+                                                <div class="add-to-cart">
+                                                    <a href="#" title="Add to Cart" class="btn btn-primary btn-iconed"><i class="icon-shopcart"></i><span>Add to Cart</span></a>
+                                                </div>
+                                                <ul class="links">
+                                                    <li><a href="#" title="Add to Compare">+ Add to Compare</a></li>
+                                                    <li><a href="#" title="Add to Wishlist">+ Add to Wishlist</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /SINGLE PRODUCT DETAILS -->
+
+                            <!-- RELATED PRODUCTS -->
+                            <div class="section with-carousel">
+                                <div class="container">
+
+                                    <div class="row carousel-container offer">
+                                        <div class="col-xs-12 col-sm-12">
+
+                                            <h4 class="section-title">Related Products</h4>
+                                            <div class="section-body">
+
+                                                <!-- carousel control nav direction -->
+                                                <div class="control-direction">
+                                                    <ul class="direction-nav carousel-direction">
+                                                        <li>
+                                                            <a class="carousel-prev btn" href="#">
+                                                                <span class="icon-arrow_left"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="carousel-next btn" href="#">
+                                                                <span class="icon-arrow_right"></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /carousel control nav direction -->
+
+                                                <!-- carousel wrapper -->
+                                                <div class="carousel-wrapper row" data-minitems="1" data-maxitems="4" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
+                                                    <ul class="products-container product-grid carousel-list portrait animated" data-animation="fadeInUp">
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="ribbon special"></div>
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/Robert-Rodriguez-Lace-Applique-Pleated-Strapless-Dress.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/Nanette-Lepore-La-Boqueria-Embroidered-Top-Flamenco-Floral-Print-Skirt.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                        <div class="caption top-right">- 20%</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="ribbon special"></div>
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/2013-Women-s-O-neck-Retro-Sequins-Floral-Printed-Pure-Silk-Satin-Dress-IM-02311378-1.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/Nanette-Lepore-Go-Crazy-Mixed-Knit-Dress.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                        <div class="caption top-right">- 20%</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="ribbon special"></div>
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/Nanette-Lepore-Amorcito-One-Shoulder-Knit-Dress.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/Nanette-Lepore-Barcelona-Crochet-Blazer-Sunbathe-Printed-Sleeveless-Top.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                        <div class="caption top-right">- 20%</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="ribbon special"></div>
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/2013-New-Women-s-O-neck-Short-Sleeve-Slim-Dot-Printed-Pure-Silk-Satin-Dress-IM-03151261-1.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="product">
+                                                                <a href="#" class="product-link clearfix">
+                                                                    <div class="product-thumbnail">
+                                                                        <img src="img/offer/Alexander-McQueen-Cap-Sleeve-Puckered-Jacquard-Sheath-Dress.jpg" alt="" />
+                                                                        <div class="caption bottom-left">$110</div>
+                                                                        <div class="caption top-right">- 20%</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="product-info clearfix">
+                                                                    <h4 class="title">
+                                                                        <a href="#">Woman Summer Dresses</a>
+                                                                    </h4>
+                                                                    <div class="details">
+                                                                        <p>
+                                                                            Model: <a href="#">Saverina Dark</a>
+                                                                        </p>
+                                                                        <p class="by">
+                                                                            by: <a href="#">shopfast</a>
+                                                                        </p>
+                                                                    </div>
+                                                                    <a href="#" class="add-to-cart">
+                                                                        <span class="icon-shopcart"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <!-- /carousel wrapper -->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /RELATED PRODUCTS -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /SITE CONTENT -->
+
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,261 @@
+<ui:composition template="/WEB-INF/templates/MasterTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                >
+    <ui:define name="title">Mon Panier</ui:define>
+
+    <ui:define name="content">
+        <!-- SITE CONTENT
+        =========================================================================== -->
+        <div id="site-content">
+
+            <!-- BREADCRUMBS -->
+            <div class="inner-action-bar">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="breadcrumbs">
+                                <ul class="unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Cart</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /BREADCRUMBS -->
+
+            <!-- SIDEBAR + MAIN CONTENT CONTAINER -->
+            <div class="main-content">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- SIDE BAR -->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 side">
+
+                            <div class="section">
+                                <div class="products-container portrait featured">
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon new"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/thumbnail/3.jpg" alt="" />
+                                                <div class="caption">- 25%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">Big Sale Every Day</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon hot"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/thumbnail/5.jpg" alt="" />
+                                                <div class="caption">- 15%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">2013 Summer collection</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /SIDE BAR -->
+
+                        <!-- MAIN CONTENT -->
+                        <div class="col-xs-12 col-sm-8 col-lg-9 main">
+
+                            <!-- CART ITEMS -->
+                            <div class="section">
+                                <table class="my-cart">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-thumbnail">Image</th>
+                                            <th class="product-name">Product Name</th>
+                                            <th class="product-qty hidden-xs">Quantity</th>
+                                            <th class="product-price">Price</th>
+                                            <th class="product-action"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                <div class="img-placeholder">
+                                                    <a href="#"><img src="img/offer/Nanette-Lepore-Go-Crazy-Mixed-Knit-Dress.jpg" alt="" /></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">Women Summer Dresses</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <div class="qty-btngroup">
+                                                    <button type="button" class="minus">-</button>
+                                                    <input type="text" value="1" />
+                                                    <button type="button" class="plus">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="price">$110.00</span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="remove-item"><span class="icon-remove"></span></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="img-placeholder">
+                                                    <a href="#"><img src="img/offer/Nanette-Lepore-La-Boqueria-Embroidered-Top-Flamenco-Floral-Print-Skirt.jpg" alt="" /></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">Women Summer Dresses</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <div class="qty-btngroup">
+                                                    <button type="button" class="minus">-</button>
+                                                    <input type="text" value="1" />
+                                                    <button type="button" class="plus">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="price">$110.00</span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="remove-item"><span class="icon-remove"></span></a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /CART ITEMS -->
+
+                            <!-- ACCORDION CONTENT -->
+                            <div class="section">
+                                <div id="cart-accordion" class="checkout accordion">
+
+                                    <!-- 01: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#cart-accordion" href="#collapse1">
+                                                <i class="icon-arrow-right"></i> Estimate Shipping & Taxes
+                                            </a>
+                                        </div>
+                                        <div id="collapse1" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <p>Enter your destination to get a shipping estimate.</p>
+                                                <form class="form-inline" role="form">
+                                                    <div class="row">
+                                                        <div class="form-group col-xs-12 col-sm-3">
+                                                            <label class="sr-only" for="countrySelect">Country</label>
+                                                            <select class="form-control max-width" id="countrySelect">
+                                                                <option value="select country">select country</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-xs-12 col-sm-3">
+                                                            <label class="sr-only" for="statsSelect">State/Province</label>
+                                                            <select class="form-control max-width" id="statsSelect">
+                                                                <option value="select state">select state</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-xs-12 col-sm-3">
+                                                            <label class="sr-only" for="zipcodeInput">Zip Code</label>
+                                                            <input type="text" class="form-control max-width" id="zipcodeInput" placeholder="Zip code" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 space30 clearfix"></div>
+                                                    <button type="button" class="btn btn-primary">Calculate</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /01: ACCORDION GROUP -->
+
+                                    <!-- 02: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#cart-accordion" href="#collapse2">
+                                                <i class="icon-arrow-right"></i> Apply Discount Code 
+                                            </a>
+                                        </div>
+                                        <div id="collapse2" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <form role="form">
+                                                    <div class="form-group">
+                                                        <label for="discoundInput">Enter your coupon code if you have one.</label>
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-sm-4">
+                                                                <input type="text" class="form-control" id="discoundInput" placeholder="Enter discount code">
+                                                            </div>
+                                                            <div class="col-xs-12 space20 visible-xs"></div>
+                                                            <div class="col-xs-12 col-sm-4">
+                                                                <button type="button" class="btn btn-primary btn-small">Apply</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /02: ACCORDION GROUP -->
+
+                                </div>
+                            </div>
+                            <!-- /ACCORDION CONTENT -->
+
+                            <!-- SHOP SUMMARY -->
+                            <div class="section">
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-sm-8 col-lg-6 pull-right center-sm">
+                                        <table class="shop-summary">
+                                            <tr>
+                                                <th>Sub Total:</th>
+                                                <td>$1170.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Eco tax (-2.00)</th>
+                                                <td>$2.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Vat (10.0 %):</th>
+                                                <td>$117.00</td>
+                                            </tr>
+                                            <tr class="total">
+                                                <th>Total:</th>
+                                                <td>$1053.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th><a href="#" class="btn btn-primary">Checkout</a></th>
+                                                <td><a href="#" class="btn btn-primary">Continue Shopping</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /SHOP SUMMARY -->
+
+                        </div>
+                        <!-- /MAIN CONTENT -->
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /SITE CONTENT -->
+    </ui:define>
+</ui:composition>

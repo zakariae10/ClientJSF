@@ -1,0 +1,464 @@
+<ui:composition template="/WEB-INF/templates/MasterTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                >
+    <ui:define name="title">Passer la commande</ui:define>
+
+    <ui:define name="content">
+        <!-- SITE CONTENT
+=========================================================================== -->
+        <div id="site-content">
+
+            <!-- BREADCRUMBS -->
+            <div class="inner-action-bar">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="breadcrumbs">
+                                <ul class="unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Checkout</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /BREADCRUMBS -->
+
+            <!-- SIDEBAR + MAIN CONTENT CONTAINER -->
+            <div class="main-content">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- SIDE BAR -->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 side">
+
+                            <div class="section">
+                                <div class="products-container portrait featured">
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon new"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/thumbnail/3.jpg" alt="" />
+                                                <div class="caption">- 25%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">Big Sale Every Day</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon hot"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/thumbnail/5.jpg" alt="" />
+                                                <div class="caption">- 15%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">2013 Summer collection</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /SIDE BAR -->
+
+                        <!-- MAIN CONTENT -->
+                        <div class="col-xs-12 col-sm-8 col-lg-9 main">
+
+                            <div class="section">
+                                <!-- ACCORDION CONTENT
+                                =========================================================================== -->
+                                <div id="checkout-accordion" class="checkout accordion">
+
+                                    <!-- 01: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#checkout-accordion" href="#collapse1">
+                                                <span class="text-bold">01:</span> Checkout Information
+                                            </a>
+                                        </div>
+                                        <div id="collapse1" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <form>
+                                                            <fieldset>
+                                                                <legend class="title">New Customer</legend>
+                                                                <p>Checkout Options:</p>
+                                                                <div class="form-account">
+                                                                    <div class="radio">
+                                                                        <input type="radio" name="customer" id="radio-register" class="checkable" checked="checked" data-label="Register Account" />
+                                                                    </div>
+                                                                    <div class="radio">
+                                                                        <input type="radio" name="customer" id="radio-guest" class="checkable" data-label="Guest Checkout" />
+                                                                    </div>
+                                                                </div>
+                                                                <p>Mauris dapibus quam id turpis dignissim rutrum. Phasellus placerat nunc [...]</p>
+                                                                <div class="space20 clearfix"></div>
+                                                                <button class="btn btn-primary">Continue</button>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-12 space40 visible-xs"></div>
+
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <form class="form-horizontal">
+                                                            <fieldset>
+                                                                <legend class="title">Returning Customer</legend>
+                                                                <p>I'm a Returning Customer</p>
+                                                                <div class="form-login">
+                                                                    <div class="form-group">
+                                                                        <label for="inputEmail" class="col-xs-12 col-sm-3 required">Email</label>
+                                                                        <div class="col-lg-7">
+                                                                            <input type="text" class="form-control" id="inputEmail">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="inputPassword" class="col-xs-12 col-sm-3 required">Password</label>
+                                                                        <div class="col-lg-7">
+                                                                            <input type="password" class="form-control" id="inputPassword">
+                                                                                <a href="#" class="help-block">Forgot your password?</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn btn-primary">Login</button>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /01: ACCORDION GROUP -->
+
+                                    <!-- 02: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#checkout-accordion" href="#collapse2">
+                                                <span class="text-bold">02:</span> Billing Information
+                                            </a>
+                                        </div>
+                                        <div id="collapse2" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="inputFirstname" class="col-sm-4 col-lg-4 control-label required">First Name</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputFirstname" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputLastname" class="col-sm-4 col-lg-4 control-label required">Last Name</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputLastname" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputEmail2" class="col-sm-4 col-lg-4 control-label required">E-Mail</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="email" class="form-control" id="inputEmail2" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputPhone" class="col-sm-4 col-lg-4 control-label required">Telephone</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputPhone" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputFax" class="col-sm-4 col-lg-4 control-label">Fax</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputFax" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputCompany" class="col-sm-4 col-lg-4 control-label">Company</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputCompany" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="inputAddress1" class="col-sm-4 col-lg-4 control-label required">Address 1</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputAddress1" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputAddress2" class="col-sm-4 col-lg-4 control-label">Address 2</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputAddress2" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputCity" class="col-sm-4 col-lg-4 control-label required">City</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputCity" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputPostcode" class="col-sm-4 col-lg-4 control-label required">Post Code</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputPostcode" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputCountry" class="col-sm-4 col-lg-4 control-label required">Country</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <select class="form-control" id="inputCountry">	
+                                                                        <option>select country</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputState" class="col-sm-4 col-lg-4 control-label required">Region/state</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <select class="form-control" id="inputState">
+                                                                        <option>select state/region</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="space20 clearfix"></div>
+                                                    <button class="btn btn-primary">Continue</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /02: ACCORDION GROUP -->
+
+                                    <!-- 03: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#checkout-accordion" href="#collapse3">
+                                                <span class="text-bold">03:</span> Delivery Details
+                                            </a>
+                                        </div>
+                                        <div id="collapse3" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="inputFirstname" class="col-sm-4 col-lg-4 control-label required">First Name</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputFirstname" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputLastname" class="col-sm-4 col-lg-4 control-label required">Last Name</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputLastname" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputEmail2" class="col-sm-4 col-lg-4 control-label required">E-Mail</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="email" class="form-control" id="inputEmail2" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputPhone" class="col-sm-4 col-lg-4 control-label required">Telephone</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputPhone" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputFax" class="col-sm-4 col-lg-4 control-label">Fax</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputFax" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputCompany" class="col-sm-4 col-lg-4 control-label">Company</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputCompany" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="inputAddress1" class="col-sm-4 col-lg-4 control-label required">Address 1</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputAddress1" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputAddress2" class="col-sm-4 col-lg-4 control-label">Address 2</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputAddress2" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputCity" class="col-sm-4 col-lg-4 control-label required">City</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputCity" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputPostcode" class="col-sm-4 col-lg-4 control-label required">Post Code</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <input type="text" class="form-control" id="inputPostcode" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputCountry" class="col-sm-4 col-lg-4 control-label required">Country</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <select class="form-control" id="inputCountry">	
+                                                                        <option>select country</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputState" class="col-sm-4 col-lg-4 control-label required">Region/state</label>
+                                                                <div class="col-sm-8 col-lg-8">
+                                                                    <select class="form-control" id="inputState">
+                                                                        <option>select state/region</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="space20 clearfix"></div>
+                                                    <button class="btn btn-primary">Continue</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /03: ACCORDION GROUP -->
+
+                                    <!-- 04: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#checkout-accordion" href="#collapse4">
+                                                <span class="text-bold">04:</span> Delivery Method
+                                            </a>
+                                        </div>
+                                        <div id="collapse4" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <form class="paymethod" role="form">
+                                                    <div class="form-group">
+                                                        <input type="radio" id="deliverymethod1" class="checkable" name="deliverymethod" data-label="Method 1" />
+                                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="radio" id="deliverymethod2" class="checkable" name="deliverymethod" data-label="Method 2" />
+                                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="radio" id="deliverymethod3" class="checkable" name="deliverymethod" data-label="Method 3" />
+                                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</p>
+                                                    </div>
+                                                    <div class="space20 clearfix"></div>
+                                                    <button class="btn btn-primary">Continue</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /04: ACCORDION GROUP -->
+
+                                    <!-- 05: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#checkout-accordion" href="#collapse5">
+                                                <span class="text-bold">05:</span> Payment Methods
+                                            </a>
+                                        </div>
+                                        <div id="collapse5" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <form class="paymethod" role="form">
+                                                    <div class="form-group">
+                                                        <input type="radio" id="paymethod1" class="checkable" name="paymethod" data-label="Direct Bank Transfer" />
+                                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="radio" id="paymethod2" class="checkable" name="paymethod" data-label="C.O.D" />
+                                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="radio" id="paymethod3" class="checkable" name="paymethod" data-label="PayPal" />
+                                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</p>
+                                                    </div>
+                                                    <div class="space20 clearfix"></div>
+                                                    <button class="btn btn-primary">Continue</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /05: ACCORDION GROUP -->
+
+                                    <!-- 06: ACCORDION GROUP -->
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#checkout-accordion" href="#collapse6">
+                                                <span class="text-bold">06:</span> Account & Billing Details
+                                            </a>
+                                        </div>
+                                        <div id="collapse6" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                                <div class="row">
+
+                                                    <div class="col-xs-12 col-sm-6 pull-right center-sm">
+                                                        <table class="shop-summary">
+                                                            <tr>
+                                                                <th>Sub Total:</th>
+                                                                <td>$1170.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Eco tax (-2.00)</th>
+                                                                <td>$2.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Vat (10.0 %):</th>
+                                                                <td>$117.00</td>
+                                                            </tr>
+                                                            <tr class="total">
+                                                                <th>Total:</th>
+                                                                <td>$1053.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><a href="#" class="btn btn-primary">Checkout</a></th>
+                                                                <td><a href="#" class="btn btn-primary">Continue Shopping</a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /06: ACCORDION GROUP -->
+
+                                </div>
+                                <!-- /ACCORDION CONTENT -->
+                            </div>
+
+                        </div>
+                        <!-- /MAIN CONTENT -->
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /SITE CONTENT -->
+
+    </ui:define>
+</ui:composition>

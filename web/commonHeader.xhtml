@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+          
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <body>
+        <ui:composition>
+
+            <!-- SITE HEADER
+            =========================================================================== -->
+            <div id="site-header">
+
+                <!-- top header bar -->
+                <div id="site-header-bar">
+                    <div class="container">
+
+                        <div class="row">
+                            <!-- top header links -->
+                            <div class="col-xs-12 col-sm-6 top-links center-sm">
+                                <ul class="menu">
+                                    <li><a href="index.html">My Account</a></li>
+                                    <li><a href="cart.html">Wishlist</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                </ul>
+                            </div>
+                            <!-- /top header links -->
+
+                            <!--
+                            | 
+                            |	SOCIAL ICONS
+                            | 
+                            |	Two hover effect avaiable for social icons
+                            |	by default hover effect is template accent color
+                            |	but you can add "multicolor" class to div.header-social-icons to have multicolor hover effect
+                            |	i.e. Your container must look like this:
+                            |	<div class="col-xs-12 col-sm-6 header-social-icons multicolor center-sm">
+                            | 
+                            -->
+                            <div class="col-xs-12 col-sm-6 header-social-icons center-sm">
+                                <ul>
+                                    <li><a href="#" class="twitter"><br/></a></li>
+                                    <li><a href="#" class="facebook"><br/></a></li>
+                                    <li><a href="#" class="skype"><br/></a></li>
+                                    <li><a href="#" class="linkedin"><br/></a></li>
+                                    <li><a href="#" class="rss"><br/></a></li>
+                                    <li><a href="#" class="deviantart"><br/></a></li>
+                                    <li><a href="#" class="googleplus"><br/></a></li>
+                                </ul>
+                            </div>
+                            <!-- /social icons -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /top header bar -->
+
+                <!-- main header -->
+                <div id="header-main">
+                    <div class="container">
+
+                        <div class="row">
+
+                            <!-- logo -->
+                            <div class="col-xs-6 col-sm-6 logo-container">
+                                <strong class="logo animated fadeInRight">
+                                    <a href="index.html">
+                                        <img src="#{request.contextPath}/resources/img/logo.jpg" alt="ShopFast - Modern Ecommerce HTML Template" title="ShopFast - Modern Ecommerce HTML Template" />
+                                    </a>
+                                </strong>
+                            </div>
+                            <!-- /logo -->
+
+                            <!-- shopping cart -->
+                            <div class="col-xs-6 col-sm-6 cart-container">
+                                <div class="header-cart animated fadeInLeft">
+
+                                    <div class="inner">
+                                        <div class="relative">
+                                            <a href="#" class="btn btn-iconed">
+                                                <i class="icon-shopcart"></i>
+                                                <span>2 Item(s) - $220.00</span>
+                                            </a>
+
+                                            <!-- CART ITEMS -->
+                                            <div class="cart-items">
+                                                <div class="header">Showing 2 of 2 items added</div>
+                                                <ul class="items clearfix">
+                                                    <li>
+                                                        <div class="item-thumbnail">
+                                                            <a href="#" title="">
+                                                                <img src="#{request.contextPath}/resources/img/offer/Nanette-Lepore-Go-Crazy-Mixed-Knit-Dress.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                        <a href="#" class="item-name">Wooman Dresses</a>
+                                                        <span class="item-price">$110.00</span>
+                                                        <div class="clearfix"></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-thumbnail">
+                                                            <a href="#" title="">
+                                                                <img src="#{request.contextPath}/resources/img/offer/2013-New-Women-s-O-neck-Short-Sleeve-Slim-Dot-Printed-Pure-Silk-Satin-Dress-IM-03151261-1.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                        <a href="#" class="item-name">Wooman Dresses</a>
+                                                        <span class="item-price">$110.00</span>
+                                                        <div class="clearfix"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="footer"><a href="cart.html">See All</a></div>
+                                            </div>
+                                            <!-- /CART ITEMS -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /shopping cart -->
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /main header -->
+
+                <!-- Navigation menu -->
+                <div id="site-menu">
+                    <div class="container">
+
+                        <div class="inner">
+
+                            <!-- main menu -->
+                            <ul class="main-menu menu visible-lg">
+                                <li class="active">
+                                    <a href="index"><i class="icon-home"></i></a>
+
+                                    <ul>
+                                        <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
+                                        <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Pages</a>
+
+                                    <ul>
+                                        <li>
+                                            <a href="product.html">Products</a>
+
+                                            <ul>
+                                                <li><a href="product2.html?mode=grid">Grid layout</a></li>
+                                                <li><a href="product1.html?mode=list">List layout</a></li>
+                                                <li><a href="single.html">Product details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="cart.html">Shopping cart</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
+                                        <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">men</a>
+
+                                    <ul>
+                                        <li><a href="product1.html?mode=list">Belt</a></li>
+                                        <li><a href="product2.html?mode=grid">Sweatshirts</a></li>
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">women</a>
+                                    <div class="mega-menu">
+
+                                        <div class="row">
+
+                                            <div class="col-lg-4 mm-col">
+                                                <h4 class="menu-title">Hodies et Sweatshirts</h4>
+
+                                                <div class="row">
+                                                    <div class="mm-row">
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <ul>
+                                                                <li><a href="#">› Dresses</a></li>
+                                                                <li><a href="#">› Beauty</a></li>
+                                                                <li><a href="#">› Image Gallery</a></li>
+                                                                <li><a href="#">› Press Kit</a></li>
+                                                                <li><a href="#">› Media Contacts</a></li>
+                                                                <li><a href="#">› Facebook</a></li>
+                                                                <li><a href="#">› Twitter</a></li>
+                                                                <li><a href="#">› Jeans</a></li>
+                                                                <li><a href="#">› Designer</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <ul>
+                                                                <li><a href="#">› Spotlight Series</a></li>
+                                                                <li><a href="#">› Video</a></li>
+                                                                <li><a href="#">› Image Gallery</a></li>
+                                                                <li><a href="#">› Press Kit</a></li>
+                                                                <li><a href="#">› Media Contacts</a></li>
+                                                                <li><a href="#">› Facebook</a></li>
+                                                                <li><a href="#">› Twitter</a></li>
+                                                                <li><a href="#">› Jeans</a></li>
+                                                                <li><a href="#">› Press Releases</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-lg-4 mm-col">
+                                                <h4 class="menu-title">Lingerie et Nightwear</h4>
+
+                                                <div class="row">
+                                                    <div class="mm-row">
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <ul>
+                                                                <li><a href="#">› Shorts</a></li>
+                                                                <li><a href="#">› Beauty</a></li>
+                                                                <li><a href="#">› Image Gallery</a></li>
+                                                                <li><a href="#">› Press Kit</a></li>
+                                                                <li><a href="#">› Media Contacts</a></li>
+                                                                <li><a href="#">› Facebook</a></li>
+                                                                <li><a href="#">› Twitter</a></li>
+                                                                <li><a href="#">› YouTube</a></li>
+                                                                <li><a href="#">› Socks et Tights</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <ul>
+                                                                <li><a href="#">› Maternity</a></li>
+                                                                <li><a href="#">› Video</a></li>
+                                                                <li><a href="#">› Image Gallery</a></li>
+                                                                <li><a href="#">› Press Kit</a></li>
+                                                                <li><a href="#">› Skirts</a></li>
+                                                                <li><a href="#">› Facebook</a></li>
+                                                                <li><a href="#">› Twitter</a></li>
+                                                                <li><a href="#">› Jeans</a></li>
+                                                                <li><a href="#">› Shoes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-lg-4 mm-col">
+                                                <h4 class="menu-title">Bags et Purses</h4>
+
+                                                <div class="row">
+                                                    <div class="mm-row">
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <ul>
+                                                                <li><a href="#">› Suits et Blazers</a></li>
+                                                                <li><a href="#">› Video</a></li>
+                                                                <li><a href="#">› Image Gallery</a></li>
+                                                                <li><a href="#">› Press Kit</a></li>
+                                                                <li><a href="#">› Media Contacts</a></li>
+                                                                <li><a href="#">› Facebook</a></li>
+                                                                <li><a href="#">› Twitter</a></li>
+                                                                <li><a href="#">› Jeans</a></li>
+                                                                <li><a href="#">› Press Releases</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <ul>
+                                                                <li><a href="#">› Trousers et Leggings</a></li>
+                                                                <li><a href="#">› Video</a></li>
+                                                                <li><a href="#">› Image Gallery</a></li>
+                                                                <li><a href="#">› Press Kit</a></li>
+                                                                <li><a href="#">› Media Contacts</a></li>
+                                                                <li><a href="#">› Facebook</a></li>
+                                                                <li><a href="#">› Twitter</a></li>
+                                                                <li><a href="#">› Jeans</a></li>
+                                                                <li><a href="#">› T-shirts et Vests</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a href="product.html">fashion</a></li>
+                                <li><a href="product.html">brands</a></li>
+                                <li><a href="product.html">gift</a></li>
+                                <li><h:link outcome="commonContact" value="Contact us"/></li>
+                            </ul>
+                            <!-- /main menu -->
+
+                            <!-- mobile main menu -->
+                            <div class="mobile-menu hidden-lg">
+
+                                <div id="dl-menu" class="dl-menuwrapper">
+                                    <button class="dl-trigger"><i class="icon-reorder"></i></button>
+                                    <ul class="dl-menu">
+                                        <li class="active">
+                                            <a href="javsacript:void(0);"><i class="icon-home"></i></a>
+
+                                            <ul class="dl-submenu">
+                                                <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
+                                                <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pages</a>
+
+                                            <ul class="dl-submenu">
+                                                <li>
+                                                    <a href="javsacript:void(0);">Products</a>
+
+                                                    <ul class="dl-submenu">
+                                                        <li><a href="product2.html?mode=grid">Grid layout</a></li>
+                                                        <li><a href="product1.html?mode=list">List layout</a></li>
+                                                        <li><a href="single.html">Product details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="cart.html">Shopping cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                
+                                                <!-- Contact -->
+                                                <li><a href="commonContact">Contacter nous</a></li>
+                                                <li><a href="index2.html?slider=nivo">Homepage - Nivoslider</a></li>
+                                                <li><a href="index1.html?slider=flex">Homepage - Flexslider</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="javsacript:void(0);">men</a>
+
+                                            <ul class="dl-submenu">
+                                                <li><a href="product1.html?mode=list">Belt</a></li>
+                                                <li><a href="product2.html?mode=grid">Sweatshirts</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li><a href="product.html">women</a></li>
+                                        <li><a href="product.html">fashion</a></li>
+                                        <li><a href="product.html">brands</a></li>
+                                        <li><a href="product.html">gift</a></li>
+                                        <li><a href="commonContact">Contacter nous</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /dl-menuwrapper -->
+
+                            </div>
+                            <!-- /mobile main menu -->
+
+                            <!-- search box -->
+                            <div class="search-box">
+                                <form onSubmit="event.preventDefault();">
+                                    <input type="text" name="query" class="query" placeholder="Search here" />
+                                    <button class="btn-search"><i class="icon-search"></i></button>
+                                </form>
+                            </div>
+                            <!-- /search box -->
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Navigation menu -->
+
+            </div>			<!-- /SITE HEADER -->
+
+
+        </ui:composition>
+    </body>
+</html>

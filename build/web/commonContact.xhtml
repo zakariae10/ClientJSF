@@ -1,0 +1,160 @@
+<ui:composition template="/WEB-INF/templates/MasterTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                >
+    <ui:define name="title">L'bassi Shop</ui:define>
+
+    <ui:define name="content">
+
+        <!-- SITE CONTENT
+        =========================================================================== -->
+        <div id="site-content">
+
+            <!-- BREADCRUMBS -->
+            <div class="inner-action-bar">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="breadcrumbs">
+                                <ul class="unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Contact</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /BREADCRUMBS -->
+
+            <!-- SIDEBAR + MAIN CONTENT CONTAINER -->
+            <div class="main-content">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- SIDE BAR -->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 side">
+
+                            <div class="section">
+                                <div class="products-container portrait featured">
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon new"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/thumbnail/3.jpg" alt="" />
+                                                <div class="caption">- 25%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">Big Sale Every Day</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="product">
+                                        <a href="#" class="product-link clearfix">
+                                            <div class="ribbon hot"></div>
+                                            <div class="product-thumbnail">
+                                                <img src="img/featured/thumbnail/5.jpg" alt="" />
+                                                <div class="caption">- 15%</div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <h3 class="title">2013 Summer collection</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /SIDE BAR -->
+
+                        <!-- MAIN CONTENT -->
+                        <div class="col-xs-12 col-sm-8 col-lg-9 main">
+
+                            <!-- GOOGLE MAP -->
+                            <div class="section">
+                                <div id="contact-map" class="google-map" data-lat="-37.817186" data-lng="144.964986" data-mlat="-37.817186" data-mlng="144.964986"></div>
+                            </div>
+                            <!-- /GOOGLE MAP -->
+
+                            <!-- CONTACT FORM -->
+                            <div class="section">
+                                <h4 class="section-title">Contact Information</h4>
+                                <div class="section-body">
+
+                                    <p>Mauris dapibus quam id turpis dignissim rutrum. Phasellus placerat nunc in nulla pretium pellentesque. Aliquam erat volutpat. In nec enim dui, in hendrerit enim. Vestibulum ante ipsum primis in faucibus </p>
+                                    <div class="space20"></div>
+                                    <form id="contact-form" class="form-horizontal contact">
+                                        <div class="form-group">
+                                            <div class="col-xs-12 col-sm-12 col-md-9">
+                                                <input type="text" class="form-control" id="inputName" name="name" data-validate="^[ا-ی\w\s]{2,30}$"/>
+                                            </div>
+                                            <label for="inputName" class="col-xs-12 col-sm-3 required" >Name</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12 col-sm-12 col-md-9">
+                                                <input type="text" class="form-control" id="inputEmail" name="email" data-validate="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>
+                                            </div>
+                                            <label for="inputEmail" class="col-xs-12 col-sm-3 required">Email (will not be published)</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12 col-sm-12 col-md-9">
+                                                <input type="text" class="form-control" id="inputSubject" name="subject"/>
+                                            </div>
+                                            <label for="inputSubject" class="col-xs-12 col-sm-3 control-label">Subject</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12 col-sm-12">
+                                                <textarea class="form-control" name="message" data-validate=".{2,400}$"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12 col-sm-12">
+                                                <button class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <!-- CONTACT FORM ALERTS -->
+                                    <div class="alert alert-success" id="contact_success" style="display: none;">
+                                        <button type="button" class="close" data-dismiss="alert">times;</button>
+                                        <div class="alert-icon">
+                                            <span class="icon-ok"></span>
+                                        </div>
+                                        <div class="alert-inner">
+                                            <strong>Thanks,</strong> your message recieved successfully. We'll get back to you as soon as possible.
+                                        </div>
+                                    </div>
+                                    <!-- /success msg -->
+
+                                    <div class="alert alert-error" id="contact_fail" style="display: none;">
+                                        <button type="button" class="close" data-dismiss="alert">times;</button>
+                                        <div class="alert-icon">
+                                            <span class="icon-close"></span>
+                                        </div>
+                                        <div class="alert-inner"></div>
+                                    </div>
+                                    <!-- /error msg -->
+                                    <!-- /CONTACT FORM ALERTS -->
+
+                                </div>
+                            </div>
+                            <!-- /CONTACT FORM -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /SITE CONTENT -->
+
+    </ui:define>
+</ui:composition>
+

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      >
+    <h:head>
+        <title>
+            <ui:insert name="title">Some title</ui:insert>
+        </title>    
+        <meta charset="UTF-8" />
+        <title>ShopFast - Modern Ecommerce HTML Template</title>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+        <!-- Favorite Icons ============================================ -->
+        <link rel="icon" href="#{request.contextPath}/resources/images/favicon/favicon.html" type="image/x-icon" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#{request.contextPath}/resources/images/favicon/apple-touch-icon-144x144-precomposed.html"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#{request.contextPath}/resources/images/favicon/apple-touch-icon-72x72-precomposed.html"/>
+        <link rel="apple-touch-icon-precomposed" href="#{request.contextPath}/resources/images/favicon/apple-touch-%20icon-precomposed.html"/>
+
+        <!-- Web Fonts ========================================================= -->
+        <!-- If you want to use google font remove this comment block and local font stylesheet
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        -->
+        <link rel="stylesheet" href="#{request.contextPath}/resources/fonts/open-sans/stylesheet.css" type="text/css"/>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/fonts/icomoon/style.css" type="text/css" media="screen" />
+
+        <!-- CSS styles ============================================================ -->
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/bootstrap.min.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/responsive.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/animate.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/custom-style.css" type="text/css" media="screen" />
+
+        <!-- Javascripts ========================================================= -->
+        <!--[if IE 8]><script src="#{request.contextPath}/resources/js/respond.min.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/modernizr.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/bootstrap.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/package.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/jquery.tweet.js"></script>
+        <script src="#{request.contextPath}/resources/js/scripts.js"></script>
+
+    </h:head>
+
+    <ui:include src="../../commonHeader.xhtml"/>
+
+    <h:body>
+        <ui:insert name="content" />
+    </h:body>
+
+    <ui:include src="../../commonFooter.xhtml"/>
+    <script src="#{request.contextPath}/resources/js/jquery.carouFredSel.min.js"></script>
+</html>
